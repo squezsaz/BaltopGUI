@@ -1,0 +1,23 @@
+name: BaltopGUI
+version: '${project.version}'
+main: com.example.baltop.BaltopPlugin
+api-version: 1.13
+author: squezsaz
+description: En zengin oyuncuları gösteren bir GUI tabanlı baltop eklentisi
+website: https://github.com/squezsaz/BaltopGUI
+
+commands:
+  baltop:
+    description: En zengin oyuncuları gösterir
+    usage: /baltop [reload]
+    permission: baltop.use
+
+permissions:
+  baltop.use:
+    description: Baltop komutunu kullanma izni
+    default: true
+  baltop.admin:
+    description: Baltop yönetici komutlarını kullanma izni
+    default: op
+
+softdepend: [Essentials, Vault]

@@ -1,0 +1,103 @@
+# BaltopGUI Türkçe Dil Dosyası
+# Bu dosya eklentinin tüm Türkçe çevirilerini içerir
+
+# Eklenti ayarları
+plugin:
+  # Otomatik yenileme aralığı (saniye cinsinden, 0 devre dışı bırakır)
+  refresh-interval: 300
+
+# GUI ayarları
+gui:
+  # GUI boyutu (en fazla 54)
+  size: 54
+  
+  # Slot ayarları (0-53 arası)
+  previous-page-slot: 45
+  next-page-slot: 53
+  sort-toggle-slot: 48
+  refresh-slot: 50
+  search-slot: 51
+  self-info-slot: 49
+  
+  # Boş slotları dekoratif eşyalarla doldurma
+  fill-empty-slots: false
+  empty-slot-item: "BLACK_STAINED_GLASS_PANE"
+  empty-slot-name: ""
+  
+  # Oyuncu sıralaması için özel renkler
+  # NOT: Buradaki sayılar sadece renk kodlaması içindir, gerçek sıra numaralarını temsil etmez
+  rank-colors:
+    "1": "&6&l"  # Altın
+    "2": "&7&l"  # Gümüş
+    "3": "&6&l"  # Bronz
+    default: "&e"  # Varsayılan altın
+  
+  # Bakiye ikonları
+  balance-icons:
+    vault: "&f⛃"  # Vault para birimi için ikon
+
+# Oyuncu başına gösterilecek maksimum oyuncu sayısı (en fazla 45)
+player-limit: 45
+
+# Bakiye formatlama ayarları
+formatting:
+  # Ondalık basamak sayısı
+  decimal-places: 2
+  
+  # Biçimlendirme eşikleri
+  thousands: 1000
+  millions: 1000000
+  billions: 1000000000
+  
+  # Biçimlendirme sembolleri
+  thousand-symbol: "K"
+  million-symbol: "M"
+  billion-symbol: "B"
+
+# Sıralama ayarları
+default-sort-order: "richest_first"  # Varsayılan sıralama: richest_first veya poorest_first
+
+# Mesajlar
+messages:
+  # Komut mesajları
+  no-permission: "&cBu komutu kullanma izniniz yok!"
+  economy-not-available: "&cEkonomi sistemi mevcut değil!"
+  only-players: "&cBu komutu sadece oyuncular kullanabilir!"
+  config-reloaded: "&aYapılandırma dosyası ve eklenti başarıyla yeniden yüklendi!"
+  
+  # GUI başlıkları
+  gui-title: "&6&lZenginler Listesi &8» &7Sayfa {page}"
+  search-results-title: "&6&lArama Sonuçları"
+  
+  # Kontrol düğmeleri
+  previous-page: "&a« &7Önceki Sayfa"
+  next-page: "&7Sonraki Sayfa &a»"
+  sort-poorest-first: "&eZenginden Fakire Sırala"
+  sort-richest-first: "&eFakirden Zengine Sırala"
+  refresh-button: "&aYenile"
+  search-button: "&bOyuncu Ara"
+  
+  # Oyuncu kafa bilgileri
+  # Yer tutucular: {rank}, {name}, {balance}
+  player-head-lore:
+    - ""
+    - "&7Sıra: &e#{rank}"
+    - "&7Bakiye: &a{balance}"
+    - ""
+  
+  # Kendi oyuncu bilgisi (alt orta bölmede)
+  self-info-title: "&6&lSenin Bilgilerin"
+  self-info-lore:
+    - ""
+    - "&7Sıra: &e#{rank}"
+    - "&7Bakiye: &a{balance}"
+    - ""
+  
+  # Arama mesajları
+  search-prompt: "&eLütfen aramak istediğiniz oyuncunun adını girin:"
+  player-not-found: "&cOyuncu bulunamadı."
+  
+  # Diğer mesajlar
+  plugin-enabled: "BaltopGUI eklentisi aktif edildi!"
+  plugin-disabled: "BaltopGUI eklentisi devre dışı bırakıldı!"
+  vault-required: "Devam edebilmek için Vault gereklidir!"

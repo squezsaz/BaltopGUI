@@ -1,0 +1,106 @@
+# BaltopGUI Configuration File
+# This file can be configured in Turkish or English
+
+# Language settings (tr for Turkish, en for English)
+language: en
+
+# Plugin settings
+plugin:
+  # Auto refresh interval (in seconds, 0 disables)
+  refresh-interval: 300
+
+# GUI settings
+gui:
+  # GUI size (maximum 54)
+  size: 54
+  
+  # Slot settings (0-53 range)
+  previous-page-slot: 45
+  next-page-slot: 53
+  sort-toggle-slot: 48
+  refresh-slot: 50
+  search-slot: 51
+  self-info-slot: 49
+  
+  # Fill empty slots with decorative items
+  fill-empty-slots: false
+  empty-slot-item: "BLACK_STAINED_GLASS_PANE"
+  empty-slot-name: ""
+  
+  # Player ranking custom colors
+  # NOTE: Numbers here are for color coding only, not actual rank numbers
+  rank-colors:
+    "1": "&6&l"  # Gold
+    "2": "&7&l"  # Silver
+    "3": "&6&l"  # Bronze
+    default: "&e"  # Default gold
+  
+  # Balance icons
+  balance-icons:
+    vault: "&f⛃"  # Icon for Vault currency
+
+# Maximum number of players to show per page (maximum 45)
+player-limit: 45
+
+# Balance formatting settings
+formatting:
+  # Decimal places
+  decimal-places: 2
+  
+  # Formatting thresholds
+  thousands: 1000
+  millions: 1000000
+  billions: 1000000000
+  
+  # Formatting symbols
+  thousand-symbol: "K"
+  million-symbol: "M"
+  billion-symbol: "B"
+
+# Sorting settings
+default-sort-order: "richest_first"  # Default sorting: richest_first or poorest_first
+
+# Messages
+messages:
+  # Command messages
+  no-permission: "&cYou don't have permission to use this command!"
+  economy-not-available: "&cEconomy system is not available!"
+  only-players: "&cThis command can only be used by players!"
+  config-reloaded: "&aConfiguration file and plugin successfully reloaded!"
+  
+  # GUI titles
+  gui-title: "&6&lRich List &8» &7Page {page}"
+  search-results-title: "&6&lSearch Results"
+  
+  # Control buttons
+  previous-page: "&a« &7Previous Page"
+  next-page: "&7Next Page &a»"
+  sort-poorest-first: "&eSort from Rich to Poor"
+  sort-richest-first: "&eSort from Poor to Rich"
+  refresh-button: "&aRefresh"
+  search-button: "&bSearch Player"
+  
+  # Player head information
+  # Placeholders: {rank}, {name}, {balance}
+  player-head-lore:
+    - ""
+    - "&7Rank: &e#{rank}"
+    - "&7Balance: &a{balance}"
+    - ""
+  
+  # Own player info (bottom center panel)
+  self-info-title: "&6&lYour Information"
+  self-info-lore:
+    - ""
+    - "&7Rank: &e#{rank}"
+    - "&7Balance: &a{balance}"
+    - ""
+  
+  # Search messages
+  search-prompt: "&ePlease enter the name of the player you want to search for:"
+  player-not-found: "&cPlayer not found."
+  
+  # Other messages
+  plugin-enabled: "BaltopGUI plugin enabled!"
+  plugin-disabled: "BaltopGUI plugin disabled!"
+  vault-required: "Vault is required to continue!"
